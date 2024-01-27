@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const { model, Schema } = mongoose
 
 const TransactionSchema = new Schema({
-    name: {type: String, required: true},
+    
     price: {type: Number, required: true},
     description: {type: String, required: true},
     datetime: {type: Date, required: true},
@@ -11,3 +11,5 @@ const TransactionSchema = new Schema({
 const TransactionModel = new model('transaction', TransactionSchema)
 
 module.exports = TransactionModel
+
+//// name: {type: String, required: true},
